@@ -1,0 +1,33 @@
+﻿{
+	"headers": [{
+			        "header1": "Name",
+			  
+					"header2": "Age",
+				
+					"header3": "Designation",
+				
+					"header4": "Salary"
+			   }],
+
+ 	
+ 	"employees": [{
+			        "name": "Anu",
+			        "age":"22",
+					"designation":"Software Engineer",
+			        "salary": "15000"
+			    	}, 
+			    	{
+					"name": "Asha",
+					"age":"28",
+					"designation":"Senior Software Engineer",
+			        "salary": "30000"
+					}, 
+					{
+					"name": "Arya",
+					"age":"22",
+					"designation":"Software Engineer",
+			        "salary": "15000"
+			     }]
+    
+    
+}

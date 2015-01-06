@@ -1,0 +1,87 @@
+body{
+background-color: #FFF;
+font-family: "Arial", Helvetica, serif;
+}
+[placeholder]:focus::-webkit-input-placeholder {
+color: transparent;
+}
+
+input:focus::-moz-placeholder {
+color: transparent;
+}
+header{
+background-color:#CADEEC;
+height: auto;
+position: relative;
+display: inline-block!important;
+width: 100%;
+padding-top: 2%;
+}
+.logo{
+width:46%;
+float: left;
+
+}
+.search{
+float: left;
+border:#30ACFF solid 1px;
+
+}
+.myForm{
+float: right!important;
+}
+.btn{
+background-color: #30ACFF;
+border-radius: 3px;
+border: solid 1px #30ACFF;
+color:#fff;
+}
+.menu{
+padding: 0.5% 3.5% 1.5% 0px !important;
+float: left;
+margin-top: 10%;
+margin-left: 3%;
+background-color: #30ACFF;
+border-radius: 5px;
+color: #fff;
+box-shadow: 5px 5px 5px #888888;
+}
+.menuContent a{
+padding: 10px;
+background-color:#30ACFF;
+color: white;
+text-decoration:none;
+margin-left: 10px;
+}
+table{
+border: 1px solid #4C4C4C;
+border-bottom: 0px;
+width: 70%;
+margin-top: 10px;
+border-collapse: collapse;
+border-spacing: 0;
+}
+table tr td, table tr th {
+border-left: 1px solid #4C4C4C;
+border-bottom: 1px solid #4C4C4C;
+padding: 10px;
+}
+table{
+    margin:0 auto;
+
+}
+.container{
+margin: 0 auto;
+max-width: 900px;
+position: relative;
+}
+li a{
+    text-decoration: none;
+    float: left;
+    margin-top: 10%;
+    font-size: 30px;
+    padding: 2%;
+}
+nav{
+    background-color: blue;
+}

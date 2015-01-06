@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/normalize.css" rel="stylesheet" type="text/css">
+	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript">
+        $(document).ready(function () {
+        	$.getJSON("data.json",function(func)
+			{
+				$.each(func.headers, function(i,item){
+				var row = $("<tr />");
+				console.log(item);
+				$("#employeeDetails").append(row);
+				row.append($("<th>" + item.header1+ "</th>"));
+				row.append($("<th>" + item.header2 + "</th>"));
+				row.append($("<th>" + item.header3 + "</th>"));
+				row.append($("<th>" + item.header4 + "</th>"));
+				});
+				$.each(func.employees, function(i,item){
+				var row = $("<tr />");
+				$("#employeeDetails").append(row);
+				row.append($("<td>" + item.name+ "</td>"));
+				row.append($("<td>" + item.age + "</td>"));
+				row.append($("<td>" + item.designation + "</td>"));
+				row.append($("<td>" + item.salary + "</td>"));
+				});
+			
+			});
+          
+       });         
+    </script>
+<style type="text/css">
+
+</style>
+</head>
+<body>
+	<div class="container">
+	<header>
+			<div class="logo">
+				<a href="#"><img src="images/logo.png" class="logo" ></a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">About</a></li>
+				</ul>
+			</nav>
+			
+			    
+	</header>
+	<h3>Employee Details</h3>
+	<table id="employeeDetails">
+	
+	</table>
+	<footer style="background-color:#CADEEC;">
+		<nav>
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">About</a></li>
+				</ul>
+		</nav>
+	</footer>
+	</div>
+</body>
+</html>
